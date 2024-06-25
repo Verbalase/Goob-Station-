@@ -1123,7 +1123,7 @@ namespace Content.Shared.CCVar
         /// before it stops resisting space wind more.
         /// </summary>
         public static readonly CVarDef<float> SpaceWindMaximumCalculatedInverseMass =
-            CVarDef.Create("atmos.space_wind_maximum_calculated_inverse_mass", 0.0125f, CVar.SERVERONLY);
+            CVarDef.Create("atmos.space_wind_maximum_calculated_inverse_mass", 0.04f, CVar.SERVERONLY);
 
         /// <summary>
         /// Increases default airflow calculations to O(n^2) complexity, for use with heavy space wind optimizations. Potato servers BEWARE
@@ -1253,6 +1253,9 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<float> AtmosHeatScale =
             CVarDef.Create("atmos.heat_scale", 8f, CVar.SERVERONLY);
+
+        public static readonly CVarDef<float> AtmosHumanoidThrowMultiplier =
+            CVarDef.Create("atmos.humanoid_throw_multiplier", 2f, CVar.SERVERONLY);
 
         /*
          * MIDI instruments

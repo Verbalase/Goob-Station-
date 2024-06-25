@@ -1,6 +1,7 @@
 using Content.Server.Atmos.Components;
 using Content.Shared.Atmos;
 using Content.Shared.Atmos.Components;
+using Content.Shared.Humanoid;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Physics;
 using Robust.Shared.Audio;
@@ -68,25 +69,6 @@ namespace Content.Server.Atmos.EntitySystems
             {
                 _activePressures.Remove(comp);
             }
-        }
-
-        private void AddMovedByPressure(EntityUid uid, MovedByPressureComponent component, PhysicsComponent body)
-        {
-            if (!TryComp<FixturesComponent>(uid, out var fixtures))
-                return;
-
-            _physics.SetBodyStatus(uid, body, BodyStatus.InAir);
-
-            foreach (var (id, fixture) in fixtures.Fixtures)
-            {
-                _physics.RemoveCollisionMask(uid, id, fixture, (int) CollisionGroup.TableLayer, manager: fixtures);
-            }
-
-            // TODO: Make them dynamic type? Ehh but they still want movement so uhh make it non-predicted like weightless?
-            // idk it's hard.
-
-            component.Accumulator = 0f;
-            _activePressures.Add((uid, component));
         }
 
         private void HighPressureMovements(Entity<GridAtmosphereComponent> gridAtmosphere, TileAtmosphere tile, EntityQuery<PhysicsComponent> bodies, EntityQuery<TransformComponent> xforms, EntityQuery<MovedByPressureComponent> pressureQuery, EntityQuery<MetaDataComponent> metas)
@@ -233,11 +215,12 @@ namespace Content.Server.Atmos.EntitySystems
                 && !float.IsPositiveInfinity(component.MoveResist))
             {
                 var moveForce = pressureDifference * MathF.Max(physics.InvMass, SpaceWindMaximumCalculatedInverseMass);
+                if (HasComp<HumanoidAppearanceComponent>(ent))
+                    moveForce *= HumanoidThrowMultiplier;
                 if (moveForce > physics.Mass)
                 {
                     var maxSafeForceForObject = SpaceWindMaxVelocity * physics.Mass;
                     moveForce = MathF.Min(moveForce, maxSafeForceForObject);
-                    AddMovedByPressure(uid, component, physics);
                     // Grid-rotation adjusted direction
                     var dirVec = (direction.ToAngle() + gridWorldRotation).ToWorldVec();
 
@@ -245,11 +228,11 @@ namespace Content.Server.Atmos.EntitySystems
                     if (throwTarget != EntityCoordinates.Invalid)
                     {
                         var pos = throwTarget.ToMap(EntityManager, _transformSystem).Position - xform.WorldPosition + dirVec;
-                        _physics.ApplyLinearImpulse(uid, pos.Normalized() * moveForce, body: physics);
+                        _throwing.TryThrow(uid, pos.Normalized() * moveForce, pressureDifference);
                     }
                     else
                     {
-                        _physics.ApplyLinearImpulse(uid, dirVec.Normalized() * moveForce, body: physics);
+                        _throwing.TryThrow(uid, dirVec.Normalized() * moveForce, pressureDifference);
                     }
 
                     component.LastHighPressureMovementAirCycle = cycle;
