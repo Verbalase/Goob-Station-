@@ -71,25 +71,6 @@ namespace Content.Server.Atmos.EntitySystems
             }
         }
 
-        private void AddMovedByPressure(EntityUid uid, MovedByPressureComponent component, PhysicsComponent body)
-        {
-            if (!TryComp<FixturesComponent>(uid, out var fixtures))
-                return;
-
-            _physics.SetBodyStatus(uid, body, BodyStatus.InAir);
-
-            foreach (var (id, fixture) in fixtures.Fixtures)
-            {
-                _physics.RemoveCollisionMask(uid, id, fixture, (int) CollisionGroup.TableLayer, manager: fixtures);
-            }
-
-            // TODO: Make them dynamic type? Ehh but they still want movement so uhh make it non-predicted like weightless?
-            // idk it's hard.
-
-            component.Accumulator = 0f;
-            _activePressures.Add((uid, component));
-        }
-
         private void HighPressureMovements(Entity<GridAtmosphereComponent> gridAtmosphere, TileAtmosphere tile, EntityQuery<PhysicsComponent> bodies, EntityQuery<TransformComponent> xforms, EntityQuery<MovedByPressureComponent> pressureQuery, EntityQuery<MetaDataComponent> metas)
         {
             //!MAGIC EXIT CONDITION THAT MAKES ALMOST 200 LINES RUN 1/100TH AS OFTEN.
@@ -240,7 +221,6 @@ namespace Content.Server.Atmos.EntitySystems
                 {
                     var maxSafeForceForObject = SpaceWindMaxVelocity * physics.Mass;
                     moveForce = MathF.Min(moveForce, maxSafeForceForObject);
-                    AddMovedByPressure(uid, component, physics);
                     // Grid-rotation adjusted direction
                     var dirVec = (direction.ToAngle() + gridWorldRotation).ToWorldVec();
 
@@ -248,11 +228,11 @@ namespace Content.Server.Atmos.EntitySystems
                     if (throwTarget != EntityCoordinates.Invalid)
                     {
                         var pos = throwTarget.ToMap(EntityManager, _transformSystem).Position - xform.WorldPosition + dirVec;
-                        _physics.ApplyLinearImpulse(uid, pos.Normalized() * moveForce, body: physics);
+                        _throwing.TryThrow(uid, pos.Normalized() * moveForce, pressureDifference);
                     }
                     else
                     {
-                        _physics.ApplyLinearImpulse(uid, dirVec.Normalized() * moveForce, body: physics);
+                        _throwing.TryThrow(uid, dirVec.Normalized() * moveForce, pressureDifference);
                     }
 
                     component.LastHighPressureMovementAirCycle = cycle;
