@@ -1254,6 +1254,9 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<float> AtmosHeatScale =
             CVarDef.Create("atmos.heat_scale", 8f, CVar.SERVERONLY);
 
+        public static readonly CVarDef<float> AtmosHumanoidThrowMultiplier =
+            CVarDef.Create("atmos.humanoid_throw_multiplier", 2f, CVar.SERVERONLY);
+
         /*
          * MIDI instruments
          */
