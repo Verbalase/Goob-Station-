@@ -25,3 +25,10 @@
   license: "CC-BY-SA-3.0"
   copyright: "Sunset by PigeonBeans. Exported in Mono OGG."
   source: "https://soundcloud.com/pigeonbeans/sunset"
+
+# Ask Piras why this is here
+- files: ["StraussII-Blue_Danube_Waltz.ogg"]
+  Commented because none of the lisences i can write in here actually work just trying to get this to work sorry
+  license: "CC0-1.0"
+  copyright: "Held by artists who were recorded"
+  source: "https://archive.org/details/BlueDanubeWaltz_201811"

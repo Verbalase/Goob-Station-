@@ -11,7 +11,8 @@
   - type: Clothing
     sprite: Goobstation/Clothing/Mask/BKKitsuneMask.rsi
   - type: BreathMask
-  - type: IngestionBlocker
+ # fuck whoever added this i want to mime in peace - Nep
+ #- type: IngestionBlocker
   - type: Tag
     tags:
     - WhitelistChameleon

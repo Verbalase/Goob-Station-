@@ -18,8 +18,28 @@
     ClothingOuterCoatBomber: 3
     ClothingHeadHatSantahat: 2
     ClothingHeadHatXmasCrown: 2
+# Goobstation Sock Stuff
+    ClothingUnderSocksBase: 1
+    ClothingUnderSocksCoder: 1
+    ClothingUnderSocksStripedWhiteandGreen: 1
+    ClothingUnderSocksStripedWhiteandOrange: 1
+    ClothingUnderSocksStripedWhiteandPurple: 1
+    ClothingUnderSocksStripedWhiteandRed: 1
+    ClothingUnderSocksStripedWhiteandYellow: 1
+    ClothingUnderSocksStripedYellowandPurple: 1
+    ClothingUnderSocksStripedGrey: 6
+    ClothingUnderSocksStripedGreyDark: 2
+    ClothingUnderSocksStripedMime: 2
+    ClothingUnderSocksStripedSherbert: 1
+    ClothingUnderSocksStripedWhiteandLightBlue: 1
+# Neptune's Parka 
+    NParka: 1
 
   emaggedInventory:
     ClothingNeckScarfStripedSyndieGreen: 3
     ClothingNeckScarfStripedSyndieRed: 3
     ClothingNeckScarfStripedCentcom: 3
+# Goobstation Sock Stuff
+    ClothingUnderSocksStripedVoidGreen: 3
+    ClothingUnderSocksStripedHotpinkBlack: 3
+    ClothingUnderSocksStripedHotpinkLight: 3

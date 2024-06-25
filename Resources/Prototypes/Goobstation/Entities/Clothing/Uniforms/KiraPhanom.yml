@@ -1,0 +1,83 @@
+# Admin Personal Clothing
+# Kira
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadDannyPhantomMask
+  name: DannyPhantomMask
+  suffix: Kira
+  description: How do you have this? Funny Kira Face Go Brrrr
+  components:
+  - type: Sprite
+    sprite: Goobstation/Clothing/Head/PhannyDantomFace.rsi
+  - type: Clothing
+    sprite: Goobstation/Clothing/Head/PhannyDantomFace.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadDannyPhantomHair
+  name: DannyPhantomHair
+  suffix: Kira
+  description: How do you have this? Funny Kira Hair Go Brrrr
+  components:
+  - type: Sprite
+    sprite: Goobstation/Clothing/Head/DannyPhantomHair.rsi
+  - type: Clothing
+    sprite: Goobstation/Clothing/Head/DannyPhantomHair.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: DannyPhantomSuitGhostSolid
+  name: Phanom Hero Suit
+  suffix: Kira
+  description: How did you get this? anyway say hi to Kira.
+  components:
+  - type: Sprite
+    sprite: Goobstation/Clothing/Uniforms/DannyPhantomSuitGhostSolid.rsi
+  - type: Clothing
+    sprite: Goobstation/Clothing/Uniforms/DannyPhantomSuitGhostSolid.rsi
+#  - type: Tag
+#    tags:
+#    -  GhostFeet
+
+- type: entity
+  parent: ClothingUniformBase
+  id: DannyPhantomSuitHuman
+  name: Phantom Hero Suit
+  suffix: Kira
+  description: Be a phantom and a high school boy all over again with this suit!
+  components:
+  - type: Sprite
+    sprite: Goobstation/Clothing/Uniforms/DannyPhantomSuitHuman.rsi
+  - type: Clothing
+    sprite: Goobstation/Clothing/Uniforms/DannyPhantomSuitHuman.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: DannyPhantomGloves
+  name: Phantom Hero Gloves
+  suffix: Kira
+  description: Punch them ghosts with these special gloves!
+  components:
+  - type: Sprite
+    sprite: Goobstation/Clothing/Hands/DannyPhantomGloves.rsi
+  - type: Clothing
+    sprite: Goobstation/Clothing/Hands/DannyPhantomGloves.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-nanomachines
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBootsDannyPhantom
+  name: Phanom Hero Boots
+  suffix: Kira
+  components:
+  - type: Sprite
+    sprite: Goobstation/Clothing/Shoes//DannyPhantomBoot.rsi
+  - type: Clothing
+    sprite: Goobstation/Clothing/Shoes/DannyPhantomBoot.rsi

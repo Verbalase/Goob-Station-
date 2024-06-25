@@ -70,6 +70,8 @@
         prob: 0.05
         orGroup: Surgshrubs
       - id: ClothingMaskSterile
+# Goobstation Sock Stuff
+      - id: ClothingUnderSocksStripedWhiteandLightBlue
 
 - type: entity
   parent: LockerWallMedical
@@ -104,6 +106,8 @@
         prob: 0.05
         orGroup: Surgshrubs
       - id: ClothingMaskSterile
+# Goobstation Sock Stuff
+      - id: ClothingUnderSocksStripedWhiteandLightBlue
 
 - type: entity
   id: LockerChemistryFilled
@@ -146,3 +150,5 @@
       - id: HandheldGPSBasic
       - id: MedkitFilled
         prob: 0.3
+# Goobstation Sock Stuff
+      - id: ClothingUnderSocksStripedWhiteandLightBlue

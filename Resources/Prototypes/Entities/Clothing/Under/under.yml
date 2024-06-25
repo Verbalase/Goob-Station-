@@ -12,6 +12,7 @@
   - type: Clothing
     sprite: Clothing/Under/Socks/bee.rsi
 
+#updated sprites to match stripped update
 - type: entity
   parent: ClothingShoesBase
   id: ClothingUnderSocksCoder
@@ -19,6 +20,6 @@
   description: It's time to code sisters!!11!
   components:
   - type: Sprite
-    sprite: Clothing/Under/Socks/coder.rsi
+    sprite: Goobstation/Clothing/Under/Socks/coder.rsi
   - type: Clothing
-    sprite: Clothing/Under/Socks/coder.rsi
+    sprite: Goobstation/Clothing/Under/Socks/coder.rsi

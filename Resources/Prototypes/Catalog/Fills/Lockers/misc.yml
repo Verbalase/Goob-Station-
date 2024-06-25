@@ -131,6 +131,14 @@
         - id: PlushieCarp
           prob: 0.2
           orGroup: carp
+# Goobstation Plushies
+        - id: PlushieBlackburna
+          prob: 0.05
+        - id: PlushiePlyushkina
+          prob: 0.05
+        - id: PlushieMatryoshka
+          prob: 0.05
+# Goobstation Plushies
         - id: PlushieHolocarp
           prob: 0.05
           orGroup: carp
@@ -144,6 +152,8 @@
           prob: 0.2
         - id: PlushieSnake
           prob: 0.2
+        - id: PlushieLouie
+          prob: 0.05
         - id: ClothingShoesSkates
           prob: 0.1
         - id: ClothingHandsGlovesColorYellow
@@ -252,6 +262,14 @@
           prob: 0.2
         - id: PlushieSnake
           prob: 0.2
+# Goobstation Plushies
+        - id: PlushieBlackburna
+          prob: 0.05
+        - id: PlushiePlyushkina
+          prob: 0.05
+        - id: PlushieMatryoshka
+          prob: 0.05
+# Goobstation Plushies
         - id: ClothingHandsGlovesColorYellow
           prob: 0.05
         - id: ClothingBeltQuiver

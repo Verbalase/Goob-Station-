@@ -14,6 +14,13 @@
       - id: ClothingHandsGlovesCaptain
       - id: ClothingNeckMantleCap
       - id: ClothingOuterWinterCap
+# Goobstation Sock Stuff
+      - id: ClothingUnderSocksStripedCaptainBlueandGold
+        orGroup: StripedSocks
+        prob: 0.50
+      - id: ClothingUnderSocksStripedCaptainGoldandBlue
+        orGroup: StripedSocks
+        prob: 0.50
 
 - type: entity
   id: DresserChiefEngineerFilled
@@ -28,6 +35,8 @@
       - id: ClothingNeckCloakCe
       - id: ClothingHeadHatBeretEngineering
       - id: ClothingOuterWinterCE
+# Goobstation Sock Stuff
+      - id: ClothingUnderSocksStripedEngineeringCE
 
 - type: entity
   id: DresserChiefMedicalOfficerFilled
@@ -45,6 +54,8 @@
       - id: ClothingHeadMirror
       - id: ClothingEyesGlasses
       - id: ClothingOuterWinterCMO
+# Goobstation Sock Stuff
+      - id: ClothingUnderSocksStripedWhiteandLightBlueBunnySlipper
 
 - type: entity
   id: DresserHeadOfPersonnelFilled
@@ -58,6 +69,8 @@
       - id: ClothingHeadHatHopcap
       - id: ClothingOuterWinterHoP
       - id: ClothingEyesGlasses
+# Goobstation Sock Stuff
+      - id: ClothingUnderSocksStripedCaptainBlueandWhite
 
 - type: entity
   id: DresserHeadOfSecurityFilled
@@ -70,11 +83,20 @@
       - id: ClothingHeadHatBeretHoS
       - id: ClothingHeadHatHoshat
       - id: ClothingNeckCloakHos
-      - id: ClothingUniformJumpskirtHoSAlt
-      - id: ClothingUniformJumpsuitHoSAlt
+# Disabled because accessable from both lathe and loadouts, makes more consistant with other dressers
+#      - id: ClothingUniformJumpskirtHoSAlt
+#      - id: ClothingUniformJumpsuitHoSAlt
       - id: ClothingUniformJumpskirtHosFormal
       - id: ClothingUniformJumpsuitHosFormal
       - id: ClothingOuterWinterHoS
+# Goobstation Sock Stuff
+      - id: ClothingUnderSocksStripedSecurityHos
+#        orGroup: StripedSocks
+        prob: 0.20
+      - id: ClothingUnderSocksStripedSecurityHosJackboot
+        orGroup: StrippedSocks
+        prob: 0.80
+
 
 - type: entity
   id: DresserQuarterMasterFilled
@@ -91,6 +113,8 @@
       - id: ClothingHandsGlovesColorBrown
       - id: ClothingNeckMantleQM
       - id: ClothingOuterWinterQM
+# Goobstation Sock Stuff
+      - id: ClothingUnderSocksStripedCargoQm
 
 - type: entity
   id: DresserResearchDirectorFilled
@@ -105,6 +129,8 @@
       - id: ClothingHandsGlovesColorPurple
       - id: ClothingEyesGlasses
       - id: ClothingOuterWinterRD
+# Goobstation Sock Stuff
+      - id: ClothingUnderSocksStripedScienceRD
 
 - type: entity
   id: DresserWardenFilled
@@ -115,3 +141,10 @@
     contents:
       - id: ClothingHeadHatWarden
       - id: ClothingHeadHatBeretWarden
+# Goobstation Sock Stuff
+      - id: ClothingUnderSocksStripedSecurityHosJackboot
+        orGroup: StripedSocks
+        prob: 0.30
+      - id: ClothingUnderSocksStripedSecurityHos
+        orGroup: StripedSocks
+        prob: 0.70

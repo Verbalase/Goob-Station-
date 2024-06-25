@@ -1,6 +1,9 @@
 - type: vendingMachineInventory
   id: AutoDrobeInventory
   startingInventory:
+    BKKitsuneMask: 2
+    BKTurtleSkirt: 2
+# Goobstation Blackburn outfit
     ClothingHeadHatJester: 1
     ClothingUniformJumpsuitJester: 1
     ClothingHeadHatJesterAlt: 1
