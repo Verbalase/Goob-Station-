@@ -134,6 +134,7 @@
   - type: StorageFill
     contents:
       - id: ClothingOuterHardsuitVoidParamed
+      - id: OxygenTankFilled #Goobstation - Adding oxygen tanks to all hardsuit lockers
       - id: ClothingOuterCoatParamedicWB
       - id: ClothingHeadHatParamedicsoft
       - id: ClothingOuterWinterPara

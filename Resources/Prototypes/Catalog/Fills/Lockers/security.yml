@@ -18,6 +18,7 @@
       - id: RubberStampWarden
       - id: DoorRemoteArmory
       - id: ClothingOuterHardsuitWarden
+      - id: OxygenTankFilled #Goobstation - Adding oxygen tanks to all hardsuit lockers
       - id: HoloprojectorSecurity
 
 - type: entity
@@ -79,6 +80,7 @@
       - id: TrackingImplanter
         amount: 2
       - id: ClothingOuterHardsuitBrigmedic
+      - id: OxygenTankFilled #Goobstation - Adding oxygen tanks to all hardsuit lockers
       - id: BoxSterileMask
       - id: ClothingHeadHatBeretBrigmedic
       - id: ClothingOuterCoatAMG

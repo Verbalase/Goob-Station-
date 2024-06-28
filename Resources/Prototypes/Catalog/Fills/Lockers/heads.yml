@@ -33,6 +33,7 @@
       - id: PinpointerNuclear
       - id: CaptainIDCard
       - id: ClothingOuterHardsuitCap
+      - id: OxygenTankFilled #Goobstation - Adding oxygen tanks to all hardsuit lockers
       - id: ClothingMaskGasCaptain
       - id: WeaponDisabler
       - id: CommsComputerCircuitboard
@@ -137,6 +138,7 @@
   - type: StorageFill
     contents:
       - id: ClothingOuterHardsuitEngineeringWhite
+      - id: OxygenTankFilled #Goobstation - Adding oxygen tanks to all hardsuit lockers
       - id: ClothingMaskBreath
       - id: ClothingEyesGlassesMeson
       - id: ClothingBeltChiefEngineerFilled
@@ -191,6 +193,7 @@
       - id: ClothingMaskSterile
       - id: ClothingHeadHatBeretCmo
       - id: ClothingOuterHardsuitMedical
+      - id: OxygenTankFilled #Goobstation - Adding oxygen tanks to all hardsuit lockers
       - id: Hypospray
       - id: HandheldCrewMonitor
       - id: DoorRemoteMedical
@@ -239,6 +242,7 @@
       - id: ProtolatheMachineCircuitboard
       - id: CircuitImprinterMachineCircuitboard
       - id: ClothingOuterHardsuitRd
+      - id: OxygenTankFilled #Goobstation - Adding oxygen tanks to all hardsuit lockers
       - id: HandTeleporter
       - id: DoorRemoteResearch
       - id: ClothingBeltUtilityFilled
@@ -276,6 +280,7 @@
       - id: ClothingOuterCoatHoSTrench
       - id: ClothingMaskNeckGaiter
       - id: ClothingOuterHardsuitSecurityRed
+      - id: OxygenTankFilled #Goobstation - Adding oxygen tanks to all hardsuit lockers
       - id: ClothingMaskGasSwat
       - id: ClothingBeltSecurityFilled
       - id: ClothingHeadsetAltSecurity
@@ -325,6 +330,7 @@
     contents:
     - id: WeaponRevolverDeckard
     - id: ClothingOuterHardsuitBasic
+    - id: OxygenTankFilled #Goobstation - Adding oxygen tanks to all hardsuit lockers
     - id: JetpackBlue
     - id: SpaceCash1000
     - id: BeachBall
