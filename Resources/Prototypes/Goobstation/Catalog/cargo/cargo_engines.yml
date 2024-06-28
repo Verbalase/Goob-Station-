@@ -1,0 +1,19 @@
+- type: cargoProduct
+  id: EngineAmeParts
+  icon:
+    sprite: Structures/Power/Generation/ame.rsi
+    state: core
+  product: CrateEngineeringAMEShielding
+  cost: 5000
+  category: cargoproduct-category-name-engineering
+  group: market
+
+- type: cargoProduct
+  id: EngineAmeController
+  icon:
+    sprite: Structures/Power/Generation/ame.rsi
+    state: control
+  product: CrateEngineeringAMEControl
+  cost: 5000
+  category: cargoproduct-category-name-engineering
+  group: market
