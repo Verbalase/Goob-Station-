@@ -1,0 +1,8 @@
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelCentcom
+  name: Centcom duffel bag
+  description: A large duffel bag for holding extra spesos and documents.
+  components:
+  - type: Sprite
+    sprite: Goobstation/Clothing/Back/Duffels/centcom.rsi

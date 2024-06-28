@@ -12,6 +12,7 @@
   loadouts:
   - NanotrasenRepresentativeBackpack
   - NanotrasenRepresentativeSatchel
+  - NanotrasenRepresentativeDuffel
 
 - type: loadoutGroup
   id: NanotrasenRepresentativeJumpsuit

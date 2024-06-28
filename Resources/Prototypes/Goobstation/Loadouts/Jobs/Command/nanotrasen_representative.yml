@@ -36,6 +36,15 @@
   equipment:
     back: ClothingBackpackSatchelNanorep
 
+- type: loadout
+  id: NanotrasenRepresentativeDuffel
+  equipment: NanotrasenRepresentativeDuffel
+
+- type: startingGear
+  id: NanotrasenRepresentativeDuffel
+  equipment:
+    back: ClothingBackpackDuffelCentcom
+
 #jumpy suity
 - type: loadout
   id: NanotrasenRepresentativeJumpsuit
